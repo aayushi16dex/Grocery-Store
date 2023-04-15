@@ -1,0 +1,431 @@
+
+/* Common CSS */
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    color: rgb(55, 145, 148);
+
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* Header */
+
+.title_dark {
+    color: rgb(27, 101, 105);
+}
+
+.row {
+    display: flex;
+}
+
+.user_Section{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+
+}
+#userSection ul {
+    display: flex;
+}
+
+.cartImg {
+    margin: 0;
+    width: 7rem;
+}
+
+.container {
+    width: 100%;
+}
+
+#header .row {
+    justify-content: space-between;
+}
+
+#header {
+    margin-bottom: 20px;
+}
+
+#header .user_Section {
+    width: 62%;
+}
+
+#header .logo {
+    width: 36%;
+    display: flex;
+}
+
+#name_text {
+    /* font-size: larger; */
+    font-style: italic;
+    font-weight: bold;
+    /* letter-spacing: 2px; */
+    margin-top: 12px;
+    margin-left: 1rem;
+}
+
+#userSection i{
+    margin-right: 0.3rem;
+    margin-left: 3rem;
+    color: orangered;
+}
+
+#userSection{
+    margin-bottom: 1rem;
+}
+
+#userSection ul li a{
+    color: rgb(27, 101, 105);
+    font-size: large;
+}
+
+#header input{
+    border: 2px solid rgb(171, 170, 170);
+    width: 20rem;
+    border-radius: 2px;
+    height: 2rem ;
+    padding-left: 2em;
+    box-sizing: border-box;
+}
+
+.btn{
+    border: 1px solid rgb(27, 101, 105) ;
+    /* background-color: red; */  
+}
+
+#searchBtn{
+    padding: 6px;
+    border: 2px solid rgb(171, 170, 170);
+    border-radius: 2px;
+    height: 2rem ;
+    display: initial;
+    cursor: pointer;
+    position: relative;
+    top: 0.1em;
+}
+
+#cartBtn{
+    padding: 8px;
+    /* border: 2px solid rgb(171, 170, 170); */
+    margin-right: 15rem;
+    /* margin-top: 7rem; */
+    border-radius: 2px;
+    height: 2rem ;
+    display: initial;
+    color: white;
+    background-color: orangered;
+    cursor: pointer;
+    position: relative;
+    top: 0.5em;
+}
+
+hr{
+    color: rgb(27, 101, 105);
+    size: 2rem;
+}
+
+/* Navigation bar CSS */
+
+#main-navigation{
+    border: 1.5px solid rgb(27, 101, 105);
+    margin: 0;
+    background-color: rgb(27, 101, 105);
+}
+
+#main-navigation .col-1{
+    width: 30%;
+    margin: 2 0 2 2rem;
+}
+
+#main-navigation .col-2{
+    width: 70%;
+}
+
+#main-navigation select{
+    border: 1px solid rgb(171, 170, 170);
+    width: 15rem;
+    border-radius: 2px;
+    height: 2rem ;
+    margin: 0.5em;
+}
+
+#main-navigation ul li{
+    margin: 0 10px;
+}
+
+#main-navigation ul li a{
+    display: block;
+    padding: 15px 16px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#main-navigation ul li.dropdown{
+    position: relative;
+}
+
+#main-navigation ul li.dropdown:after{
+    position: relative;
+    right: 0px;
+    top: 22px;
+    border: 4px solid black;
+    border-color: #000 transparent transparent;
+}
+
+/* Content - Sidebar CSS */
+
+#content #title{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+    /* color: rgb(27, 101, 105); */
+    color: orangered;
+    /* text-decoration: wavy; */
+    text-decoration-line: underline;
+    text-decoration-color: rgb(27, 101, 105);
+    font-weight: bolder;
+}
+
+#content{
+    padding: 1em 0em;
+}
+
+#content .col-1{
+    width: 25%;
+}
+
+#content .col-2{
+    width: 75%;
+}
+
+#sidebar .widget .form input[type="text"]{
+    width: 70%;
+    height: 2rem;
+    padding: 0 1rem;
+}
+
+#sidebar .widget input[type="range"]{
+    width: 90%;
+    cursor: pointer;
+}
+
+#sidebar{
+    background-color: rgb(247, 247, 247);
+    padding: 1rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+}
+
+#angularBtn{
+    color: white;
+    background-color: rgb(27, 101, 105);
+    box-sizing: border-box;
+    padding: 0.5em;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    width: 1.6rem;
+    height: 1.5rem;
+    padding-bottom: 1.5em;
+    top: 0.1em;
+    font-weight: bolder; 
+}
+
+#sidebar #reviews ul{
+    list-style: none;
+}
+
+#sidebar #reviews li i{
+    color: rgb(239, 214, 50);
+}
+
+/* Content - Main content CSS */
+
+#main{
+    margin-left: 2rem;
+}
+
+#main h2{
+    text-align: center;
+    margin-top: 2rem;
+    color: rgb(27, 101, 105);
+}
+#main #section_1 img{
+    width: 90%;
+    height: 8em;
+    margin-bottom: 1em;
+    padding: 1em 0em;
+    border-bottom: 1px solid lightgray;
+}
+
+#main #section_2 img{
+    width: 100%;
+    height: 10em;
+    margin-bottom: 1em;
+    /* padding: 1em 0em; */
+    border-bottom: 1px solid lightgray;
+}
+
+#main .image{
+    /* width: 100%; */
+    /* height: 7rem; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#main .box{
+    width: 15rem;
+    box-shadow: 3px 4px 8px 4px rgba(0,0,0,0.2);  
+    margin: 0 1em 0 1em;
+    /* height: 15rem; */
+}
+
+#main .desc{
+    margin-left: 1em;
+}
+#main .item_name{
+    text-align: center;
+}
+#main .cost{
+    font-weight: bolder;
+    font-size: large;
+}
+
+#main del{
+    color: rgb(163, 159, 159);
+    font-size: small;
+}
+
+#main .discount{
+    color: green;
+}
+
+#main button{
+    background-color: white;
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 3px;
+    height: 3em;
+    width: 6.5em;
+    margin: 0.5em;
+}
+
+#main .weight{
+    font-weight: bold;
+}
+
+#main .add_item{
+    color: orangered;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    border-color: rgb(255, 143, 103);
+}
+
+#main .exploreBtn{
+    color: orangered;
+    cursor: pointer;
+    display: flex;
+    font-weight: bolder;
+    font-size: 2em;
+    align-items: center;
+    margin-left: 0.2em;
+}
+#section_1, #section_2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+
+#footer{
+    height: 18rem;
+    width: 100%;
+    margin-top: 3em;
+    background-color: rgb(27, 101, 105);
+    display: flex;
+}
+
+#footer p{
+    line-height: 1.5em;
+    word-spacing: 0.1em;;
+} 
+
+#footer .col{
+    width: 20%;
+    margin: 1em 2em;
+    color: rgb(49, 186, 193);
+    color: whitesmoke;
+}
+
+#footer .col:nth-child(4){
+    width: 10%;
+}
+#footer .col:nth-child(5){
+    width: 30%;
+    margin-right: 4em;
+}
+
+#footer #contact i{
+    width: 1.3em;
+    height: 1.3em;
+    font-size: 2em;
+    margin: 0 0.2em;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#footer #payment i{
+    font-size: 1.2em;
+    margin: 0 0.2em;
+    cursor: pointer;
+}
+
+#footer i:hover{
+    color: rgba(235, 234, 234, 0.909);
+}
+
+
+#footer h3{
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+#footer a{
+    color: whitesmoke;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#footer #subscribe{
+    color: rgb(27, 101, 105);
+    font-weight: bolder;
+    cursor: pointer;
+}

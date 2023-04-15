@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/Prac3Style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Website</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="row">
+                <div class="logo">
+                    <div class="col">
+                        <h1 id="name_text"> <span class="title_dark">G</span>rocery <span class="title_dark">S</span>hop
+                        </h1>
+                    </div>
+
+                    <div class="col">
+                        <img class="cartImg"
+                            src="https://media.istockphoto.com/photos/shopping-cart-with-different-food-products-picture-id1306977522?b=1&k=20&m=1306977522&s=170667a&w=0&h=aCpJcpOWb3U3O6Vh5algE6PNNbgGZUocUo4tRJ3iOKQ="
+                            alt="No img">
+                    </div>
+                </div>
+
+                <div class="user_Section">
+                    <div class="col">
+                        <div class="row" id="userSection">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-map-marker"></i>Shop Locator </a></li>
+                                <li><a href="#"><i class="fa fa-automobile"></i> Track Order </a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i> 001 234 5678 </a></li>
+                                <li><a href="#"><i class="fa fa-sign-in"></i> Sign In </a></li>
+                                <li><a href="#"><i class="fa fa-user"></i> Sign Up </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <form action="#">
+                                    <input type="text" name="name" id="name" placeholder="How can we help you today?">
+                                    <i class="fa fa-search" id="searchBtn"></i>
+                                </form>
+                            </div>
+
+                            <div class="col">
+                                <form action="#">
+                                    <i id="cartBtn" class="fa fa-shopping-cart"> <span>Add to Cart</span></i>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav id="main-navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-1">
+                        <select>
+                            <option value="none">All Categories</option>
+                            <option value="">Kitchen</option>
+                            <option value="">Household</option>
+                            <option value="">Snacks and Beverages</option>
+                            <option value="">Personal Care</option>
+                            <option value="">Electronics</option>
+                            <option value="">Clothes</option>
+                            <option value="">Mobiles</option>
+                            <option value="">Furniture</option>
+                            <option value="">Books</option>
+                        </select>
+                    </div>
+
+                    <div class="col col-2">
+                        <ul class="row">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Kitchen</a></li>
+                            <li><a href="#">Household</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <div id="content">
+            <div class="container">
+                <div id="title">
+                    Our Top Products
+                </div>
+
+                <div class="row">
+                    <div class="col col-1">
+                        <aside id="sidebar">
+
+                            <!-- Search Bar -->
+                            <div class="widget">
+                                <h3>Search Here</h3>
+                                <div class="form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Product Name">
+                                        <i class="fa fa-angle-right" id="angularBtn"></i>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!-- Price range -->
+                            <div class="widget">
+                                <h3>Price Range</h3>
+                                <p>
+                                    Rs. 500 - 1000
+                                </p>
+                                <input type="range">
+                            </div>
+
+                            <hr>
+
+                            <!-- Check box -->
+                            <div class="widget">
+                                <h3>Food Preference</h3>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="" id="veg">
+                                        <label for="veg">Vegetarian</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="" id="non-veg">
+                                        <label for="non-veg">Non-Vegetarian</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <hr>
+
+                            <!-- Reviews -->
+                            <div class="widget">
+                                <h3>Discount</h3>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="discount_1">
+                                        <label for="discount_1">5% or more</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="discount_2">
+                                        <label for="discount_2">10% or more</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="discount_3">
+                                        <label for="discount_3">20% or more</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="discount_4">
+                                        <label for="discount_4">30% or more</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="discount_5">
+                                        <label for="discount_5">40% or more</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="discount_6">
+                                        <label for="discount_6">50% or more</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <hr>
+
+                            <div class="widget">
+                                <h3>Customer Reviews</h3>
+                                <ul id="reviews">
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                </li>
+
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-full"></i>
+                                    <span>4.5</span>
+                                </li>
+
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span>4.0</span>
+                                </li>
+
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-full"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span>3.5</span>
+                                </li>
+
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span>3.0</span>
+                                </li>
+
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span>2.0</span>
+                                </li>
+                            </ul>
+
+                            </div>
+                        </aside>
+                    </div>
+
+                    <!-- Main items -->
+                    <div class="col col-2">
+                        <main id="main">
+
+                            <h2>Cleaning Detergents</h2> 
+                            <section id="section_1" class="products">  
+                                                
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://cdn.shopify.com/s/files/1/0500/8421/6991/products/593603_9f5bb55e-3f83-4880-bef2-3c439406ea4c_512x.jpg?v=1657019329" alt="Image not found">
+                                            </div>
+                                           
+                                            <div class="desc">
+                                                <span class="item_name">Tide</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 350 </span>
+                                                    <del>&#x20B9; 500</del>                                                 
+                                                    <span class="discount">12% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">1kg</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://www.bigbasket.com/media/uploads/p/l/40195405_4-ariel-matic-top-load-liquid-detergent.jpg">
+                                            </div>
+                                           
+                                            <div class="desc">
+                                                <span class="item_name">Ariel</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 298 </span>
+                                                    <del>&#x20B9; 499</del>                                                 
+                                                    <span class="discount">18% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">500g</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://images.heb.com/is/image/HEBGrocery/001026882?fit=constrain,1&wid=800&hei=800&fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0" alt="Image not found">
+                                            </div>
+
+                                            <div class="desc">
+                                                <span class="item_name">Gain</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 240 </span>
+                                                    <del>&#x20B9; 370</del>                                                 
+                                                    <span class="discount">13% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">500g</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+                                    <i class="fa fa-angle-double-right exploreBtn"></i>
+                                </div>
+
+                            </section>
+
+                            <h2>Nuts</h2>  
+                            <section id="section_1" class="products">  
+                                                
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://www.bigbasket.com/media/uploads/p/xxl/40195961_1-nutraj-cashew-nuts-w450.jpg" alt="Image not found">
+                                            </div>
+                                           
+                                            <div class="desc">
+                                                <span class="item_name">Cashew Nuts</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 599 </span>
+                                                    <del>&#x20B9; 699</del>                                                 
+                                                    <span class="discount">10% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">500g</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://eatdelights.com/wp-content/uploads/2021/01/how-long-do-peanuts-last-735x489.jpg">
+                                            </div>
+                                           
+                                            <div class="desc">
+                                                <span class="item_name">Peanuts</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 199 </span>
+                                                    <del>&#x20B9; 249</del>                                                 
+                                                    <span class="discount">5% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">250g</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://m.media-amazon.com/images/I/414Wq8UWTrL._SX466_.jpg" alt="Image not found">
+                                            </div>
+
+                                            
+                                           
+                                            <div class="desc">
+                                                <span class="item_name">Walnuts</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 499 </span>
+                                                    <del>&#x20B9; 699</del>                                                 
+                                                    <span class="discount">20% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">100g</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+                                    <i class="fa fa-angle-double-right exploreBtn"></i>          
+                                </div>
+
+                            </section>
+
+
+                            <h2>Cereals</h2> 
+                            <section id="section_2" class="products">  
+                                                
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://5.imimg.com/data5/OD/WB/MY-4776221/wheat-grain-500x500.jpg" alt="Image not found">
+                                            </div>
+                                           
+                                            <div class="desc">
+                                                <span class="item_name">Wheat</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 499 </span>
+                                                    <del>&#x20B9; 699</del>                                                 
+                                                    <span class="discount">20% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">5kg</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://images.saymedia-content.com/.image/t_share/MTc0MjE2NDAwMDY2MzI0MzQ4/cooking-with-barley-what-is-barley-what-are-the-types-of-barley.jpg">
+                                            </div>
+                                           
+                                            <div class="desc">
+                                                <span class="item_name">Barley</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 299 </span>
+                                                    <del>&#x20B9; 399</del>                                                 
+                                                    <span class="discount">10% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">1kg</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://media.istockphoto.com/photos/oat-background-picture-id184599434" alt="Image not found">
+                                            </div>
+
+                                            <div class="desc">
+                                                <span class="item_name">Oats</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 399 </span>
+                                                    <del>&#x20B9; 699</del>                                                 
+                                                    <span class="discount">50% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">1kg</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    <i class="fa fa-angle-double-right exploreBtn"></i>
+                                </div>
+
+                            </section>
+
+                            <h2>Pulses</h2> 
+                            <section id="section_2" class="products">  
+                                                
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://4.imimg.com/data4/GC/RI/MY-71993/lantil-500x500.jpg" alt="Image not found">
+                                            </div>
+                                           
+                                            <div class="desc">
+                                                <span class="item_name">Lentils</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 199 </span>
+                                                    <del>&#x20B9; 249</del>                                                 
+                                                    <span class="discount">8% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">500g</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://www.sirimart.in/wp-content/uploads/2020/09/whole-green-moong.jpeg">
+                                            </div>
+                                           
+                                            <div class="desc">
+                                                <span class="item_name">Green gram</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 80 </span>
+                                                    <del>&#x20B9; 200</del>                                                 
+                                                    <span class="discount">60% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">500g</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://www.myjewishlearning.com/wp-content/uploads/2003/02/garbs.jpg" alt="Image not found">
+                                            </div>
+
+                                            <div class="desc">
+                                                <span class="item_name">Chick Peas</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 129 </span>
+                                                    <del>&#x20B9; 299</del>                                                 
+                                                    <span class="discount">25% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">500g</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+                  
+                                </div>
+                                <i class="fa fa-angle-double-right exploreBtn"></i>
+
+                            </section>
+
+                            <h2>Hair Care</h2> 
+                            <section id="section_2" class="products">  
+                                                
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://post.healthline.com/wp-content/uploads/2022/07/best-natural-shampoos-to-try-732x549-thumbnail-732x549.jpg" alt="Image not found">
+                                            </div>
+                                           
+                                            <div class="desc">
+                                                <span class="item_name">Wow Shampoo</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 249 </span>
+                                                    <del>&#x20B9; 399</del>                                                 
+                                                    <span class="discount">26% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">500ml</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://i.insider.com/61d4843e5a119b00184af76c?width=700">
+                                            </div>
+                                           
+                                            <div class="desc">
+                                                <span class="item_name">Anti-dandruff Shampoo</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 299 </span>
+                                                    <del>&#x20B9; 376</del>                                                 
+                                                    <span class="discount">23% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">250ml</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://honasa-mamaearth-production.imgix.net/r/i/rice-hair-oil-with-ingredient_1.jpg" alt="Image not found">
+                                            </div>
+
+                                            <div class="desc">
+                                                <span class="item_name">MamaEarth Hair Oil</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 269 </span>
+                                                    <del>&#x20B9; 399</del>                                                 
+                                                    <span class="discount">10% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">250ml</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                                <i class="fa fa-angle-double-right exploreBtn"></i>
+
+                            </section>
+
+                            <h2>Snacks</h2> 
+                            <section id="section_1" class="products">  
+                                                
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://m.media-amazon.com/images/I/7190VJZZuyL._SX425_.jpg" alt="Image not found">
+                                            </div>
+                                           
+                                            <div class="desc">
+                                                <span class="item_name">Ferrero</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 299 </span>
+                                                    <del>&#x20B9; 399</del>                                                 
+                                                    <span class="discount">20% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">270g</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="http://www.pepsicoindia.co.in/images/librariesprovider16/default-album/chatpata" alt="Image not found">
+                                            </div>
+                                           
+                                            <div class="desc">
+                                                <span class="item_name">Chatpata Cheese Kurkure</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 30 </span>
+                                                    <del>&#x20B9; 25</del>                                                 
+                                                    <span class="discount">17% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">104g</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="image">
+                                                <img src="https://ik.imagekit.io/dunzo/SU5ySTh3VUZzSjZVRG9kQ0pKajY5QT09-product_image.jpg?tr=w-436,h-436,cm-pad_resize" alt="Image not found">
+                                            </div>
+
+                                            <div class="desc">
+                                                <span class="item_name">Minute Maid Mix Fruit Juice</span>
+                                                <p>
+                                                    <span class="cost">&#x20B9; 79 </span>
+                                                    <del>&#x20B9; 129</del>                                                 
+                                                    <span class="discount">14% off</span>                                                
+                                                </p>
+                                            </div>
+
+                                            <button class="weight">500ml</button>
+                                            <button class="add_item">Add Item</button>
+
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                                <i class="fa fa-angle-double-right exploreBtn"></i>
+
+                            </section>
+
+                        </main>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="col" id="payment">
+                <h3>About us</h3>
+                <p>Grocery Shopsy is an online grocery store with top quality pulses, food grains, dairy products and hundreds of other daily need items.</p>
+
+                <a href="#"><i class="fa fa-cc-paypal"></i></a>
+                <a href="#"><i class="fa fa-cc-visa"></i></a>
+                <a href="#"><i class=" fa fa-cc-mastercard"></i></a>
+                <a href="#"><i class="fa fa-credit-card"></i></a>
+            </div>
+
+
+            <div class="col" id="contact">
+                <h3>Follow Us</h3>
+                <p>Check out our official social channels.</p>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                
+            </div>
+
+            <div class="col">
+                <h3>Returns</h3>
+                <p>Want to return your items? Please check the <a id="policy" href="#">policy</a> first to continue the return process.</p>
+
+            </div>
+
+            <div class="col"></div>
+
+            <div class="col">
+                <h3>Daily offers Sign Up</h3>
+                <span>Get the latest news, arrivals and offers from Grocery Shopsy.</span>
+                <br><br>
+                
+                <form action="#">
+                <label for="name">Your name</label><br>
+                <input type="text" id="name"><br><br>
+
+                <label for="mail">Your e-mail</label><br>
+                <input type="text" id="mail">
+
+                <br><br>
+
+                <button id="subscribe" type="submit" value="Subscribe">Subscribe</button>
+            </form>
+            </div>
+        </div>
+</body>
+</html>
+
